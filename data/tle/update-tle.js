@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+const https=require("https"),fs=require("fs"),process=require("process");function downloadTLE(e){const s=`https://celestrak.org/NORAD/elements/gp.php?GROUP=${e}&FORMAT=tle`,t=`${e}.txt`;https.get(s,(e=>{const s=fs.createWriteStream("groups/"+t);e.pipe(s),s.on("finish",(()=>{s.close(),console.log(`Downloaded ${t}`)}))}))}process.chdir(__dirname);const groups=["last-30-days","stations","active","weather","resource","planet","spire","iridium-NEXT","starlink","oneweb","globalstar","gnss","science","cubesat"];groups.forEach((e=>{downloadTLE(e)}));
