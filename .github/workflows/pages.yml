@@ -1,6 +1,11 @@
-name: Node CI
+#Workflow for deploying static content to GitHub Pages
+name: Build and GH-Page Deploy
 
-on: [push]
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -22,3 +27,8 @@ jobs:
       run: npm run lint
     - name: npm build
       run: npm run build
+    - name: Deploy to GH Page
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: dist
