@@ -10,21 +10,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: recursive
-        persist-credentials: false
-    - name: npm install
-      run: npm install
-    - name: npm lint
-      run: npm run lint
-    - name: Update TLE
-      run: npm run update-tle
-    - name: Build
-      run: npm run build
-    - name: Deploy to GH Page
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: gh-pages
-        folder: dist
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install
+        run: npm install
+
+      - name: Build
+        run: |
+          npm run lint
+          npm run update-tle
+          npm run build
+          
+      - name: Deploy to GH Page
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
