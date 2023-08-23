@@ -20,7 +20,9 @@ jobs:
       run: npm install
     - name: npm lint
       run: npm run lint
-    - name: npm build
+    - name: Update TLE
+      run: npm run update-tle
+    - name: Build
       run: npm run build
     - name: Deploy to GH Page
       uses: JamesIves/github-pages-deploy-action@v4
