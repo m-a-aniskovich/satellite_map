@@ -27,6 +27,7 @@ jobs:
           npm run lint
           npm run update-tle
           npm run build
+          find ./dist -name ".gitignore" -delete
           
       - name: Deploy to GH Page
         uses: JamesIves/github-pages-deploy-action@v4.4.3
