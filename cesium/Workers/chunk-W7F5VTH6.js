@@ -1,0 +1,2 @@
+/*! For license information please see chunk-W7F5VTH6.js.LICENSE.txt */
+var GeometryOffsetAttribute={NONE:0,TOP:1,ALL:2},GeometryOffsetAttribute_default=Object.freeze(GeometryOffsetAttribute);export{GeometryOffsetAttribute_default};

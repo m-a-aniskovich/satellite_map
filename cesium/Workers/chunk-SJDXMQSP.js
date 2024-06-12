@@ -1,0 +1,2 @@
+/*! For license information please see chunk-SJDXMQSP.js.LICENSE.txt */
+import{defaultValue_default}from"./chunk-C53JYYKX.js";function GeometryAttributes(t){t=defaultValue_default(t,defaultValue_default.EMPTY_OBJECT),this.position=t.position,this.normal=t.normal,this.st=t.st,this.bitangent=t.bitangent,this.tangent=t.tangent,this.color=t.color}var GeometryAttributes_default=GeometryAttributes;export{GeometryAttributes_default};

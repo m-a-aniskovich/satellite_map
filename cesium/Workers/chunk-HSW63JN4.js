@@ -1,0 +1,2 @@
+/*! For license information please see chunk-HSW63JN4.js.LICENSE.txt */
+import{defaultValue_default}from"./chunk-C53JYYKX.js";import{defined_default}from"./chunk-YS4KPNLC.js";function combine(e,t,o){o=defaultValue_default(o,!1);const f={},n=defined_default(e),r=defined_default(t);let a,d,i;if(n)for(a in e)e.hasOwnProperty(a)&&(d=e[a],r&&o&&"object"==typeof d&&t.hasOwnProperty(a)?(i=t[a],f[a]="object"==typeof i?combine(d,i,o):d):f[a]=d);if(r)for(a in t)t.hasOwnProperty(a)&&!f.hasOwnProperty(a)&&(i=t[a],f[a]=i);return f}var combine_default=combine;export{combine_default};
