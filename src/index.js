@@ -20,5 +20,6 @@ cc.sats.addFromTleUrls([
   ["data/tle/groups/starlink.txt", ["Starlink"]],
   ["data/tle/groups/stations.txt", ["Stations"]],
   ["data/tle/groups/weather.txt", ["Weather"]],
+  ["data/tle/groups/eutelsat.txt", ["Eutelsat"]],
   // ["data/tle/groups/active.txt", ["Active"]],
 ]);
