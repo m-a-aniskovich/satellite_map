@@ -17,7 +17,7 @@ jobs:
         with:
           submodules: recursive
           persist-credentials: false
-          lfs: true
+          lfs: false
 
       - name: Install
         run: npm install
