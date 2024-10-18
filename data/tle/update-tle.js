@@ -77,6 +77,7 @@ const groups = [
   "radar",
   "cubesat",
   "other",
+  "eutelsat",
 ];
 
 groups.forEach((group) => {
